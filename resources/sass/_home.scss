@@ -1,0 +1,530 @@
+.home {
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #0974f085, #098fe7ba),
+        url(../../storage/app/public/home/cover.jpg);
+    background-size: cover;
+    background-position: top;
+
+    &__register {
+        width: 100%;
+        height: 10%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 0.5rem;
+
+        &--box-anchor {
+            font-size: 2rem;
+            margin-right: 2.5rem;
+
+            & a {
+                text-decoration: none;
+                color: #fff;
+                padding: 1rem 3rem;
+                margin-left: 2rem;
+                border: 1px solid #fff;
+                border-radius: 20px;
+                font-family: "Lato", sans-serif;
+
+                &:hover {
+                    color: red;
+                    border: 1px solid red;
+                    background-color: white;
+                    transition: all s;
+                }
+            }
+        }
+    }
+
+    &__container {
+        width: 85%;
+        height: 85%;
+        border: 3px #fff solid;
+        margin: auto;
+        animation-name: redCont;
+        animation-duration: 1.4s;
+        animation-timing-function: ease-out;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &--text {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 11rem;
+            font-family: "Monofett", cursive;
+            margin-bottom: 30px;
+            animation: deliveboo 1.4s;
+        }
+
+        &--subtext {
+            width: 60%;
+            text-transform: uppercase;
+            color: white;
+            letter-spacing: 5px;
+            font-size: 1.3rem;
+            font-family: "Lato", sans-serif;
+            text-align: center;
+            animation: presentation 1.4s;
+        }
+
+        &--arrow {
+            margin: auto;
+            text-transform: uppercase;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            font-family: "Hind", sans-serif;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+.round {
+    position: relative;
+    border: 5px solid #fff;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 100%;
+    margin-top: 6rem;
+    margin-bottom: 1.5rem;
+}
+
+.round > span {
+    font-size: 5px;
+    z-index: 999;
+    height: 3px;
+    margin: 1px;
+    width: 30px;
+    background: #fff;
+    transition: 0.4s ease;
+}
+
+.round > span:first-child {
+    display: block;
+    position: absolute;
+    transform: rotate(48deg);
+    left: 15%;
+    bottom: 35%;
+}
+
+.round > span:nth-child(2) {
+    display: block;
+    position: absolute;
+    transform: rotate(-48deg);
+    left: 41%;
+    bottom: 35%;
+}
+
+.round > span:nth-child(3) {
+    display: block;
+    position: absolute;
+    transform: rotate(48deg);
+    left: 15%;
+    bottom: 54%;
+}
+
+.round > span:nth-child(4) {
+    display: block;
+    position: absolute;
+    transform: rotate(-48deg);
+    left: 41%;
+    bottom: 54%;
+}
+
+.round:hover {
+    border: 5px solid gold;
+    transition: all 1s;
+}
+
+.round:hover span:nth-child(1) {
+    transform: rotate(-132deg);
+}
+
+.round:hover span:nth-child(2) {
+    transform: rotate(132deg);
+}
+
+.round:hover span:nth-child(3) {
+    transform: rotate(228deg);
+}
+
+.round:hover span:nth-child(4) {
+    transform: rotate(-228deg);
+}
+
+.main__container--right--restourants {
+    margin: 30px 0 !important;
+}
+
+.main {
+    // min-height: 1000px;
+    background-image: linear-gradient(to right bottom, #0974f085, #098fe7ba);
+    // padding: 5rem;
+
+    &__container {
+        width: 100%;
+
+        border: 2px solid red;
+        border-radius: 5px;
+        margin: auto;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+
+        &--left {
+            width: 25%;
+
+            border-right: 2px solid rgba(0, 0, 0, 0.123);
+
+            &--top {
+                min-height: 100px;
+                display: flex;
+                align-items: center;
+                margin-top: 1.5rem;
+
+                & h5 {
+                    margin-left: 2rem;
+                    font-size: 3.2rem;
+                    letter-spacing: 5px;
+                    font-family: "Hind", sans-serif;
+                    text-transform: uppercase;
+                    color: rgb(54, 53, 53);
+                }
+            }
+
+            &--checkbox {
+                margin-left: 2rem;
+
+                &--single {
+                    margin-bottom: 0.5rem;
+
+                    & label {
+                        font-size: 2rem;
+                        margin-left: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        &--right {
+            width: 75%;
+            min-height: 100px;
+
+            &--top {
+                min-height: 100px;
+                display: flex;
+                align-items: center;
+                border-bottom: 2px solid rgba(0, 0, 0, 0.123);
+
+                & h5 {
+                    margin-left: 2rem;
+                    font-size: 3.2rem;
+                    letter-spacing: 5px;
+                    font-family: "Hind", sans-serif;
+                    text-transform: uppercase;
+                    color: rgb(54, 53, 53);
+                }
+            }
+
+            &--restourants {
+                width: 100%;
+                margin-top: 1.5rem;
+                // margin-bottom: 2.5rem;
+                margin-left: 1.5rem;
+
+                &--box {
+                    width: 200px;
+                    height: 300px;
+                    overflow-y: auto;
+                    overflow-x: hidden;
+
+                    border-radius: 5px;
+                    margin-right: 1rem;
+                    margin-bottom: 1rem;
+                    display: inline-block;
+
+                    &:hover {
+                        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px
+                                inset,
+                            rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+                            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+                        transition: 0.5s ease;
+                    }
+
+                    img {
+                        width: 200px;
+                        height: 140px;
+                        border-radius: 5px;
+                    }
+
+                    h5 {
+                        margin-left: 0.5rem;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        padding-top: 7.5px;
+                        font-family: "Hind", sans-serif;
+                        text-transform: uppercase;
+                        color: rgb(54, 53, 53);
+                    }
+
+                    div {
+                        padding-top: 1.5px;
+                        margin-left: 0.5rem;
+                        font-size: 1.5rem;
+                        font-family: "Hind", sans-serif;
+                        color: rgb(54, 53, 53);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main__container--left-mobile {
+    display: none;
+}
+
+.main__container--right {
+    padding: 15px;
+}
+.typ-mobile {
+    display: none;
+}
+
+.margin-auto {
+    margin: 0 auto;
+}
+.main__container--right--restourants {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.myflex {
+    display: flex;
+    flex-flow: row wrap;
+}
+.typs-box {
+    margin-left: 0 !important;
+    color: red !important;
+    font-size: 1.1rem !important;
+    display: flex;
+    margin-right: 5px;
+}
+
+.a-cont {
+    font-size: 1.1rem !important;
+}
+
+.stars {
+    text-align: left;
+    #star {
+        color: rgb(224, 165, 0);
+    }
+}
+
+.work-with-us {
+    background-color: blanchedalmond;
+    padding: 3rem;
+
+    & h5 {
+        text-align: center;
+        padding-top: 2rem;
+        margin-left: 2rem;
+        font-size: 3.2rem;
+        letter-spacing: 5px;
+        font-family: "Hind", sans-serif;
+        text-transform: uppercase;
+        color: rgb(54, 53, 53);
+    }
+
+    .rider,
+    .call {
+        background-color: white;
+        margin: auto;
+        margin-top: 3rem;
+        width: 80%;
+        min-height: 240px;
+        position: relative;
+        -moz-box-shadow: 0 0 25px #333333;
+        -webkit-box-shadow: 0 0 25px #333333;
+        box-shadow: 0 0 25px #333333;
+    }
+
+    & .rider .img_rider {
+        background-image: url(../../storage/app/public/home/rider.jpeg);
+        background-size: cover;
+        background-position: top;
+        width: 55%;
+        height: 240px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    }
+
+    & .rider .text_rider {
+        text-align: center;
+        width: 35%;
+        position: absolute;
+        top: 10%;
+        left: 56%;
+
+        & div {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        & button {
+            -moz-box-shadow: 0 0 15px #333333;
+            -webkit-box-shadow: 0 0 15px #333333;
+            box-shadow: 0 0 15px #333333;
+            border: none;
+            text-transform: uppercase;
+            color: white;
+            margin-top: 1.5rem;
+            font-size: 1.8rem;
+            padding: 1.5rem;
+            border-radius: 15px;
+            background-color: coral;
+        }
+    }
+
+    & .call .text_call {
+        text-align: center;
+        width: 35%;
+        position: absolute;
+        top: 10%;
+        left: 8%;
+
+        & div {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+        }
+
+        & button {
+            -moz-box-shadow: 0 0 15px #333333;
+            -webkit-box-shadow: 0 0 15px #333333;
+            box-shadow: 0 0 15px #333333;
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            margin-top: 1.5rem;
+            font-size: 1.8rem;
+            padding: 1.5rem;
+            border-radius: 15px;
+            background-color: coral;
+        }
+    }
+
+    & .call .img_call {
+        background-image: url(../../storage/app/public/home/call-center.png);
+        background-size: cover;
+        background-position: center;
+        width: 55%;
+        height: 240px;
+        position: absolute;
+        top: 0;
+        left: 45%;
+        clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+    }
+}
+
+@media screen and (max-width: 1064px) {
+    .footer_up {
+        justify-content: center;
+        .box_ {
+            text-align: center;
+            width: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .home__logo--text {
+        margin-top: 10px;
+        font-size: 7.5rem;
+    }
+}
+
+//filtro tipologie
+@media screen and (max-width: 1000px) {
+    .main__container--left--top > h5 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+}
+
+//mobile
+@media screen and (max-width: 830px) {
+    .main__container--left {
+        display: none;
+    }
+    .main__container {
+        position: relative;
+    }
+    .main__container--right--top {
+        display: block;
+        padding: 15px;
+    }
+
+    .typ-mobile {
+        display: block;
+        text-align: center;
+    }
+    .main__container--right {
+        display: flex;
+        flex-flow: wrap column;
+        justify-content: center;
+    }
+    .main__container--right--restourants {
+        text-align: center;
+    }
+    .home__register {
+        justify-content: center;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .home__logo--text {
+        margin-top: 15px;
+        font-size: 6rem;
+    }
+    .main {
+        padding: 1rem;
+    }
+    .main__container--right--restourants {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .main__container--right--restourants--box {
+        margin: 0;
+    }
+
+    .footer_up {
+        .box_ {
+            width: 100%;
+        }
+    }
+
+    .home__logo--subtext {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 470px) {
+    .home__logo--text {
+        margin-top: 20px;
+        font-size: 4.5rem;
+    }
+}

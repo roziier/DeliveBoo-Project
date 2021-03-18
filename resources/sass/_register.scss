@@ -1,0 +1,105 @@
+.register__box {
+    width: 60%;
+    margin: 5rem auto;
+    border: 3px solid #fff;
+    border-radius: 20px;
+
+    &--top {
+        text-align: center;
+        background-color: #757575;
+        padding: 4em;
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+        border-bottom: 2px solid #fff;
+
+        & h4 {
+            font-size: 3rem;
+            color: #fff;
+        }
+    }
+
+    &--form {
+        background-image: linear-gradient(
+                to right bottom,
+                rgba(235, 231, 231, 0.5),
+                rgba(149, 150, 146, 0.5)
+            ),
+            url(../../storage/app/public/home/cofee.jpg);
+        background-size: cover;
+        // background-size: cover;
+        background-position: center;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+
+        & form {
+            padding: 3rem;
+        }
+    }
+}
+
+.tip-cont {
+    display: flex;
+    justify-content: center;
+    .tip {
+        text-align: center;
+        color: white;
+        &:hover {
+            color: white;
+        }
+    }
+}
+
+// //typologies
+
+ul > li {
+    list-style-type: none;
+    color: white;
+}
+
+.checkbox-menu li label {
+    display: block;
+    padding: 3px 10px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+    margin: 0;
+    transition: background-color 0.4s ease;
+    font-size: 1.5rem !important;
+}
+.checkbox-menu li input {
+    margin: 0px 5px;
+    top: 2px;
+    position: relative;
+    font-size: 2rem !important;
+}
+
+.checkbox-menu li.active label {
+    background-color: #cbcbff;
+}
+
+.checkbox-menu li label:hover,
+.checkbox-menu li label:focus {
+    background-color: #f5f5f5;
+}
+
+.checkbox-menu li.active label:hover,
+.checkbox-menu li.active label:focus {
+    background-color: #b8b8ff;
+}
+
+.typ {
+    margin: 0 auto;
+}
+
+select {
+    font-size: 1.5rem !important;
+}
+
+#pd button {
+    font-size: 1.8rem;
+    color: black;
+}

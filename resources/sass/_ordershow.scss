@@ -1,0 +1,36 @@
+//box order container
+.order-box {
+    border: 3px ridge rgba(218, 165, 32, 1);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 25px;
+    transition: all 0.5s;
+    padding: 2%;
+    font-size: 20px;
+    background-image: linear-gradient(
+        to right bottom,
+        rgb(216, 216, 216),
+        #f8f8ca91
+        ),
+        url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XjvYT98KCNWok-EKx5wZLwHaE8%26pid%3DApi&f=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    
+    .orderr {
+        border: 2px ridge #89a6c4;
+        padding: 30px;
+        margin: 15px;
+        border-bottom: 5px ridge #fff97e;
+        background-image: linear-gradient(to right bottom, white, silver);
+    }
+
+    .ordered-dishes {
+        li{
+            color: black;
+            font-size: 2rem;
+        }
+    }
+}
+

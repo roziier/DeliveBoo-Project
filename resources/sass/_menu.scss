@@ -1,0 +1,181 @@
+.dashboard__box--flex--img {
+    width: 100%;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 231, 231, 0.5),
+            hsla(75, 2%, 58%, 0.5)
+        ),
+        url(../../storage/app/public/home/dashboard3.jpg);
+
+    position: relative;
+    background-color: none;
+    background-size: cover;
+    // background-size: cover;
+    background-position: center;
+    min-height: 520px;
+}
+
+.dashboard__box--flex--menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+
+    &--left {
+        margin-top: 3rem;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & .new-plate,
+        & .go-back {
+            text-align: center;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 25px 15px;
+            &:hover {
+                background-color: #969901;
+                margin-left: 5px;
+                box-shadow: -5px 7px 7px 2px rgba(84, 84, 84, 1);
+                color: white;
+            }
+            &:active {
+                position: relative;
+                top: 2.5px;
+            }
+        }
+
+        & .plus,
+        & .arrow {
+            background-color: silver;
+            width: 50px;
+            height: 50px;
+            border: 2px solid gold;
+            border-radius: 50%;
+            position: relative;
+            transition: all 0.6s;
+            margin-bottom: 2rem;
+            display: none;
+
+            &:hover {
+                border: 1px solid white;
+                transform: scale(1.2);
+            }
+
+            & i {
+                color: black;
+
+                font-size: 2.5rem;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+
+    &--right {
+        margin-top: 3rem;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+
+        &--container {
+            width: 90%;
+            border: 2px solid white;
+            border-radius: 5px;
+            background-color: rgba(240, 255, 240, 0.5);
+            margin-bottom: 2rem;
+            overflow-y: auto;
+
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            padding: 10px;
+            min-height: 300px;
+            max-height: 450px;
+            overflow-y: auto;
+        }
+        & .dish__box {
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+            text-align: center;
+            height: 300px;
+            width: 200px;
+
+            border-radius: 10px;
+            transition: 0.25s all;
+            overflow-y: auto;
+            margin: 10px;
+            margin: 1rem auto;
+            border: 2px gold solid;
+            & img {
+                align-self: center;
+            }
+            &:hover {
+                border: 2px red solid;
+            }
+
+            & div {
+                font-size: 2rem;
+            }
+        }
+
+        .dish__box--buttons {
+            align-self: center;
+            width: 130px;
+            display: flex;
+            justify-content: space-between;
+
+            .edit {
+                background-color: blue;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: relative;
+                transition: all 0.6s;
+
+                &:hover {
+                    border: 1px solid white;
+                    transform: scale(1.2);
+                }
+
+                .fa-edit {
+                    color: white;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .cancel {
+                background-color: red;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                position: relative;
+                transition: all 0.6s;
+
+                &:hover {
+                    border: 1px solid white;
+                    transform: scale(1.2);
+                }
+
+                .fa-trash-alt {
+                    color: white;
+                    font-size: 2rem;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+    }
+}

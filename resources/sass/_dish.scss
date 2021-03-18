@@ -1,0 +1,182 @@
+//parte ristorante
+.dashboard__box--imgform {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(
+            to right bottom,
+            rgb(168, 167, 161),
+            #e1e2dfba
+        ),
+        url(../../storage/app/public/home/dish.jpg);
+
+    background-size: cover;
+    background-position: center;
+}
+
+.dashboard__box--form {
+    width: 60%;
+    margin: auto;
+    padding: 3rem;
+
+    & select {
+        font-size: 1.5rem;
+    }
+
+    & label {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    & input {
+        font-size: 1.5rem;
+    }
+}
+
+//parte utente (show-menu)
+.title_menu {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 20px 20% 0;
+    padding: 4rem;
+    color: grey;
+    letter-spacing: 1rem;
+    background-color: #ffd700ed;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.container_menu-chart {
+    border: 5px solid gold;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    padding: 1rem;
+    background-image: linear-gradient(
+            to right bottom,
+            rgb(168, 167, 161),
+            #e1e2dfba
+        ),
+        url("https://thumbs.dreamstime.com/b/healthy-food-background-fruits-vegetables-cereal-nuts-superfood-dietary-balanced-vegetarian-eating-products-healthy-141560056.jpg");
+    background-size: cover;
+    margin: 0px 20% 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    .left_menu-chart {
+        flex-direction: column;
+        margin: 0 1.5%;
+        .media_flex_ {
+            display: flex;
+        }
+        .add_chart {
+            max-width: 125px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 20px;
+            color: rgb(240, 240, 240);
+            background: #0da121;
+        }
+        .add_chart:hover {
+            transition: 0.2s;
+            transform: scale(1.1);
+            color: rgb(255, 255, 255);
+            background: #06bb1e;
+            cursor: pointer;
+        }
+        .dish_mini-box {
+            display: flex;
+            flex-direction: column;
+            margin: 15px 0;
+            width: 300px;
+            border-left: 2px solid white;
+            padding: 10px;
+            img {
+                border-radius: 5px;
+                border: 2px solid gold;
+            }
+        }
+        .dish_mini-box:hover {
+            transition: 0.2s;
+            border-left: 2px;
+        }
+        .reddd:hover {
+            border-left: 4px solid red;
+            opacity: 0.4;
+        }
+        .greennn:hover {
+            border-left: 4px solid green;
+        }
+        .price_add {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+        }
+    }
+    /* parte dx */
+    .right_menu-chart {
+        display: flex;
+        flex-direction: column;
+
+        .fast-shopping-cart {
+            display: flex;
+            text-align: center;
+
+            .fa-shopping-cart {
+                text-align: center;
+                font-size: 3.5rem;
+                color: rgb(255, 196, 0);
+                background: rgba(246, 246, 246, 0.89);
+                border-radius: 50px;
+                padding: 10px;
+            }
+        }
+        .cart {
+            margin: 20px 10px;
+            position: sticky;
+            top: 20px;
+            display: flex;
+            flex-direction: column;
+            min-width: 150px;
+            padding: 20px 10px;
+            border: 1px solid white;
+            background: #ffd70038;
+            border-radius: 10px;
+            .chart_element {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .chart_dishxt {
+                font-size: 1.8rem;
+                display: flex;
+                flex-direction: column;
+            }
+            .fa-trash {
+                padding: 10px;
+                margin: 10px;
+                color: cornsilk;
+                background: red;
+                border-radius: 45%;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* checkout */
+.go_checkout {
+    display: flex;
+    font-size: 4rem;
+    margin: 10px 20%;
+    .a_checkout {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        font-size: 3.5rem;
+        border-radius: 10px;
+        background: rgba(49, 49, 49, 0.397);
+    }
+}
+.go_checkout:hover .a_checkout {
+    background: rgba(29, 29, 29, 0.63);
+    color: gold;
+}

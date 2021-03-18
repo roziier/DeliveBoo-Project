@@ -1,0 +1,29 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Nunito");
+
+// Variables
+@import "animation";
+@import "variables";
+@import "home";
+@import "register";
+@import "login";
+@import "header";
+@import "footer";
+@import "dash";
+@import "menu";
+@import "dish";
+@import "error";
+@import "responsive";
+@import "checkout";
+@import "ordershow";
+@import "orderindex";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+.hidden {
+    display: none;
+}
+.visible {
+    display: block;
+}

@@ -1,0 +1,106 @@
+//navbar
+#navbarr {
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 231, 231, 0.5),
+            rgba(149, 150, 146, 0.5)
+        ),
+        url(../../storage/app/public/home/header.png);
+    background-size: cover;
+    background-position: top;
+    border-bottom: 2px solid gold;
+
+    //logo
+    .navbar-brand {
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+        font-family: "Monofett", cursive;
+    }
+    #navbarDropdown {
+        width: 0;
+        font-size: 2rem;
+    }
+    .dropdown-menu-right {
+        font-size: 2rem;
+        margin-right: 52px;
+        background: rgba(255, 255, 255, 0.2);
+        & > a {
+            color: red;
+        }
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-around;
+
+        .rightt {
+            display: flex;
+            & > a {
+                width: 100%;
+                text-align: center;
+                font-size: 5rem;
+            }
+            .mob {
+                width: 100%;
+            }
+        }
+    }
+
+    //login register
+    .log-reg {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+
+        #login,
+        #register {
+            position: relative;
+            transition: 0.2s all;
+            margin: 0 5px;
+            align-self: center;
+            border-left: 3px solid gold;
+            border-bottom: 3px solid gold;
+            padding: 5px 10px;
+            & > a {
+                font-size: 1.8rem;
+                font-weight: bolder;
+                text-decoration: none;
+                color: white;
+            }
+            &:hover {
+                transition: 0.25s all;
+                //border-radius: 10px;
+                border: 3px solid white;
+            }
+            &:active {
+                bottom: 2px;
+                border: 3px solid gold;
+                color: gold;
+            }
+        }
+    }
+    .mob {
+        position: relative;
+    }
+    .logoutt {
+        font-size: 2rem;
+        color: white;
+        border: 2px solid white;
+        padding: 5px;
+        padding-left: 15px;
+    }
+    .sub-logoutt {
+        margin: 0 auto;
+        position: absolute;
+        color: white;
+    }
+    .sub-logoutt > a {
+        color: white;
+        &:hover {
+            color: black;
+            font-weight: bold;
+        }
+    }
+}

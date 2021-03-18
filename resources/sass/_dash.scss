@@ -1,0 +1,117 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    font-size: 100%;
+    #logo {
+        border: 5px solid gold;
+        border-radius: 15px;
+        margin: 25px;
+    }
+    &__box {
+        width: 90%;
+        min-height: 500px;
+
+        border: 3px solid gold;
+        border-radius: 10px;
+
+        &--title {
+            background-image: linear-gradient(to right bottom, gold, #d1dabcba),
+                url(../../storage/app/public/home/dashboard.jpg);
+            background-size: cover;
+            background-position: center;
+            color: grey;
+            font-size: 4rem;
+            text-align: center;
+            letter-spacing: 1rem;
+            text-transform: uppercase;
+            padding: 4rem;
+        }
+
+        &--flex {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            background-color: white;
+
+            &--left {
+                width: 35%;
+                background-color: grey;
+                color: white;
+                padding: 50px 0;
+
+                & h4 {
+                    text-align: center;
+                    font-size: 3.2rem;
+                    text-transform: uppercase;
+                    padding: 1.4rem;
+                }
+
+                &--data {
+                    width: 80%;
+                    margin: auto;
+                    margin-bottom: 1rem;
+                    margin-bottom: 1rem;
+
+                    & div {
+                        font-size: 1.8rem;
+                    }
+
+                    & hr {
+                        background-color: gold;
+                        height: 2px;
+                    }
+                }
+            }
+
+            &--right {
+                margin: 0 auto;
+                text-align: center;
+                width: 65%;
+                background-image: linear-gradient(
+                        to right bottom,
+                        rgb(168, 167, 161),
+                        #e1e2dfba
+                    ),
+                    url(../../storage/app/public/home/dashboard2.jpg);
+                color: ivory;
+                background-size: cover;
+                background-position: center;
+                padding-bottom: 3rem;
+
+                & h4 {
+                    padding: 2rem;
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                    font-size: 2rem;
+                    margin-top: 2rem;
+                }
+
+                & .menu,
+                & .order,
+                & .choose,
+                & .upload {
+                    text-align: center;
+                    background-color: silver;
+                    font-size: 1.3rem;
+                    min-width: 10px;
+                    padding: 0.8rem;
+                    border: 2px solid gold;
+                    color: black;
+                    border-radius: 10px;
+                    margin-bottom: 2rem;
+                    text-decoration: none;
+                    margin-left: 2rem;
+                    text-transform: uppercase;
+                    &:hover {
+                        border: 2px solid red;
+                    }
+                }
+                .order{
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.order-index-box {
+    margin: 0 1.5%;
+    border: 3px ridge rgba(218, 165, 32, 1);
+    margin-top: 25px;
+    transition: all 0.5s;
+    padding: 2%;
+    font-size: 20px;
+    background-image: linear-gradient(
+            to right bottom,
+            rgb(216, 216, 216),
+            #f8f8ca91
+        ),
+        url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.XjvYT98KCNWok-EKx5wZLwHaE8%26pid%3DApi&f=1");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    hr {
+        background: gray;
+        margin: 0 auto;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: bolder;
+    }
+    .order-li:first-child {
+        padding-bottom: 7.5px;
+    }
+    .order-li {
+        color: black;
+        border-bottom: 1px ridge gray;
+        transition: all 0.25s;
+        a {
+            color: rgb(85, 85, 85);
+            text-decoration: none;
+            font-size: 1.75rem;
+        }
+        transition: all 0.05s;
+        &:hover {
+            margin-left: 2.5px;
+            border-bottom: 5px ridge goldenrod;
+            a {
+                color: black;
+            }
+        }
+        cursor: pointer;
+    }
+}

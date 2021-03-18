@@ -1,0 +1,72 @@
+.containerBraintree_ {
+    margin: 3% auto;
+    width: 80%;
+    border: 5px solid gold;
+    border-radius: 10px;
+    padding: 2% 2%;
+    background-image: linear-gradient(
+            to right bottom,
+            rgba(235, 231, 231, 0.548),
+            hsla(75, 2%, 50%, 0.5)
+        ),
+        url(../../storage/app/public/home/foodCheckout.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black;
+    font-weight: bolder;
+
+    #amount_ {
+        width: 230px;
+        background-color: white;
+        padding: 2% 2%;
+        border-radius: 10px;
+        max-height: 150px;
+        color: black;
+    }
+    #amountShow {
+        width: 90%;
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    .flex_cart_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .boxRegister_ {
+            width: 65%;
+        }
+        .boxCart_ {
+            width: 35%;
+        }
+    }
+
+    .fa-shopping-cart {
+        color: gold;
+    }
+}
+
+.flexButtons_ {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+
+    .btStyle_ {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .flex_cart_box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .boxRegister_ {
+            width: 100% !important;
+        }
+        .boxCart_ {
+            width: 100% !important;
+        }
+    }
+}
